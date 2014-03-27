@@ -21,6 +21,7 @@
 		7F53304A18E3C0B5006CDA24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F53302C18E3C0B4006CDA24 /* UIKit.framework */; };
 		7F53305218E3C0B5006CDA24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F53305018E3C0B5006CDA24 /* InfoPlist.strings */; };
 		7F53305418E3C0B5006CDA24 /* MultipleCollectionViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F53305318E3C0B5006CDA24 /* MultipleCollectionViewsTests.m */; };
+		7F53305F18E3D09D006CDA24 /* EDSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F53305E18E3D09D006CDA24 /* EDSCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		7F53304F18E3C0B5006CDA24 /* MultipleCollectionViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultipleCollectionViewsTests-Info.plist"; sourceTree = "<group>"; };
 		7F53305118E3C0B5006CDA24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F53305318E3C0B5006CDA24 /* MultipleCollectionViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleCollectionViewsTests.m; sourceTree = "<group>"; };
+		7F53305D18E3D09D006CDA24 /* EDSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDSCollectionViewCell.h; sourceTree = "<group>"; };
+		7F53305E18E3D09D006CDA24 /* EDSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDSCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				7F53303E18E3C0B5006CDA24 /* EDSViewController.m */,
 				7F53304018E3C0B5006CDA24 /* Images.xcassets */,
 				7F53302F18E3C0B4006CDA24 /* Supporting Files */,
+				7F53305D18E3D09D006CDA24 /* EDSCollectionViewCell.h */,
+				7F53305E18E3D09D006CDA24 /* EDSCollectionViewCell.m */,
 			);
 			path = MultipleCollectionViews;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F53303F18E3C0B5006CDA24 /* EDSViewController.m in Sources */,
+				7F53305F18E3D09D006CDA24 /* EDSCollectionViewCell.m in Sources */,
 				7F53303518E3C0B4006CDA24 /* main.m in Sources */,
 				7F53303918E3C0B4006CDA24 /* EDSAppDelegate.m in Sources */,
 			);
@@ -379,10 +385,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultipleCollectionViews/MultipleCollectionViews-Prefix.pch";
 				INFOPLIST_FILE = "MultipleCollectionViews/MultipleCollectionViews-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1ECB92B0-F3BF-4A25-9F51-A0503D590F77";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +402,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eduardo Diaz (4V822266EN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultipleCollectionViews/MultipleCollectionViews-Prefix.pch";
 				INFOPLIST_FILE = "MultipleCollectionViews/MultipleCollectionViews-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "54C6EB23-E34D-4A06-B223-2C6E25AF77D5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -459,6 +473,7 @@
 				7F53305918E3C0B5006CDA24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F53305A18E3C0B5006CDA24 /* Build configuration list for PBXNativeTarget "MultipleCollectionViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +482,7 @@
 				7F53305C18E3C0B5006CDA24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
